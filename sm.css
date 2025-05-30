@@ -1,0 +1,91 @@
+
+  
+.back-arrow {
+    position: absolute;
+    top: 200px; /* juster ift. header */
+    left: 30px;
+    font-size: 32px;
+    background-color: #9CBEA1;
+    border-radius: 50%;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .wine-detail {
+    background-color: #F5E9C8;
+    width: 100%;
+    padding: 120px 5vw 80px;
+    box-sizing: border-box;
+    margin-bottom: -115px;
+  }
+  
+  .wine-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .wine-image {
+    width: 28%;
+    height: auto;
+    margin-top: -28px;
+    margin-left: -50px;
+  }
+  
+  .wine-text {
+    max-width: 900px;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+  }
+  
+  .wine-text h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: -80px;
+  }
+  
+  .wine-text h2 {
+    font-family: "playfair display", serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .wine-text p {
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .btn-light {
+    display: inline-block;
+    background-color: #333333;
+    border: 2px solid #333;
+    color: #F5E9C8;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 60px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px #333;
+  }
+  
+  .btn-light:hover {
+    transform: scale(1.03);
+  }

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oplev dansk elegance</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="voresvine.css">
+</head>
+<body>
+    <header>
+        <div class="logo-wrapper">
+          <img src="images/header/header2.png" alt="Havblink Logo" class="header2" usemap="#logo-ss" id="logo">
+        </div>
+        <map name="logo-ss"> <!--koordinater, der matcher billedets dimensioner (1452x150px)-->
+            <!--Herunder har jeg lavet et usynligt felt der gør logoet klikbart selvom det bare er et billede-->
+         <area shape="rect" coords="660,199,910,80" alt="hjem" href="index.html">
+       </map>
+
+        <nav class="nav-left">
+            <a href="voresvine.html" style="color: #F5E9C8;">Vores vine</a>
+            <a href="danskhvidvin.html">Dansk Hvidvin</a>
+        </nav>
+        <nav class="nav-right">
+            <a href="besogos.html">Besøg os</a>
+            <a href="omos.html">Om os</a>
+        </nav>
+      
+        <div class="shop-btn">
+          <a href="404.html">Shop</a>
+        </div>
+      </header>
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <img src="images/voresvine/hero.png" alt="Vores vine">
+        </section>
+        <!-- Intro Section -->
+        <section class="intro-section">
+          <h2>Oplev dansk elegance</h2>
+          <h3>vin fra Sydfyns solrige skråninger</h3>
+          <p>Hos Havblink producerer vi to unikke hvidvine<br>
+          – begge med udgangspunkt i Solaris-druen og dyrket i Sydfyns milde kystklima.</p>
+        </section>
+<!-- Solaris Reserve -->
+        <section class="wine-slider-wrapper">
+            <button class="slide-arrow left" id="prevBtn" onclick="prevWine()">←</button>
+          
+            <div class="wine-slider-track" id="wineSlide">
+              <!-- Wine Feature 1 -->
+              <section class="wine-feature">
+                <div class="wine-card1">
+                  <img src="images/vin/solaris-reserve2024.png" alt="Solaris Reserve 2024">
+                  <div>
+                    <h3>Solaris Reserve 2024</h3>
+                    <p><strong>Smagsnoter:</strong><br> Grønne æbler, citrus, hvid fersken</p>
+                    <p><strong>Velegnet til:</strong><br> Fisk, lyst fjerkræ, sommerretter</p>
+                    <a href="sr24.html" class="btn-dark">Læs mere »</a>
+                  </div>
+                </div>
+              </section>
+              <!-- Wine Feature 2 -->
+                <section class="wine-feature">
+                    <div class="wine-card1">
+                    <img src="images/vin/solaris-reserve2023.png" alt="Solaris Reserve 2023">
+                    <div>
+                        <h3>Solaris Reserve 2023</h3>
+                        <p><strong>Smagsnoter:</strong><br> Pære, stikkelsbær, let urtet finish</p>
+                        <p><strong>Velegnet til:</strong><br> Grillet fisk, kyllingesalat, milde oste</p>
+                        <a href="sr23.html" class="btn-dark">Læs mere »</a>
+                    </div>
+                    </div>
+                </section>
+                <!-- Wine Feature 3 -->
+                <section class="wine-feature">
+                    <div class="wine-card1">
+                    <img src="images/vin/solaris-reserve2022.png" alt="Solaris Reserve 2022">
+                    <div>
+                        <h3>Solaris Reserve 2022</h3>
+                        <p><strong>Smagsnoter:</strong><br> Hvide blomster, citrus, let krydret eftersmag</p>
+                        <p><strong>Velegnet til:</strong><br> Skaldyr, sushi, sommersalater</p>
+                        <a href="sr22.html" class="btn-dark">Læs mere »</a>
+                    </div>
+                    </div>
+                </section>
+            </div>
+
+            <button class="slide-arrow right" id="nextBtn" onclick="nextWine()">→</button>
+          </section>
+<!-- Solaris & Muscaris -->
+<section class="wine-slider-wrapper muscaris-slider">
+    <button class="slide-arrow left" id="muscarisPrevBtn" onclick="prevMuscaris()">←</button>
+  
+    <div class="wine-slider-track" id="muscarisSlide">
+      <!-- 2024 -->
+      <section class="wine-feature">
+        <div class="wine-card2">
+          <img src="images/vin/solaris-muscaris24.png" alt="Solaris & Muscaris 2024">
+          <div>
+            <h3>Solaris & Muscaris 2024</h3>
+            <p><strong>Smagsnoter:</strong><br> Hyldeblomst, melon, mineralsk eftersmag</p>
+            <p><strong>Velegnet til:</strong><br> Vegetariske retter, ost, skaldyr</p>
+            <a href="sm24.html" class="btn-dark">Læs mere »</a>
+          </div>
+        </div>
+      </section>
+  
+      <!-- 2023 -->
+      <section class="wine-feature">
+        <div class="wine-card2">
+          <img src="images/vin/solaris+muscaris23.png" alt="Solaris & Muscaris 2023">
+          <div>
+            <h3>Solaris & Muscaris 2023</h3>
+            <p><strong>Smagsnoter:</strong><br> Citrusblomst, moden fersken, let krydret mineralitet</p>
+            <p><strong>Velegnet til:</strong><br> Lyst kød, cremede pastaretter, gedeost</p>
+            <a href="sm23.html" class="btn-dark">Læs mere »</a>
+          </div>
+        </div>
+      </section>
+  
+      <!-- 2022 -->
+      <section class="wine-feature">
+        <div class="wine-card2">
+          <img src="images/vin/solaris+muscaris22.png" alt="Solaris & Muscaris 2022">
+          <div>
+            <h3>Solaris & Muscaris 2022</h3>
+            <p><strong>Smagsnoter:</strong><br> Akaciehonning, grape, florale noter</p>
+            <p><strong>Velegnet til:</strong><br> Skaldyr, asiatisk inspirerede retter, milde tapas</p>
+            <a href="sm22.html" class="btn-dark">Læs mere »</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <button class="slide-arrow right" id="muscarisNextBtn" onclick="nextMuscaris()">→</button>
+  </section>
+      
+        <!-- CTA Section -->
+        <section class="shop-cta-section split-bg">
+            <img src="images/logo/wave.png" alt="Dekorativ bølge" class="wave-image" />
+            
+            <h2>Smag forskellen – direkte til din dør</h2>
+            
+            <p>Du kan købe vores vine direkte gennem vores webshop<br>
+               og få dem leveret hjem til dig.</p>
+            <p>Uanset om du foretrækker den rene Solaris eller<br>
+               vores friske blend, er det nemt og trygt at bestille.</p>
+            
+               <a href="404.html" class="btn-dark">Gå til webshoppen »</a>
+          </section>
+      <section class="vineyard">
+        <img src="images/landingpage/overfooter.png" alt="Vinmark med havudsigt" />
+      </section>
+      </main>
+      <footer>
+        <div class="footer-columns">
+          <div>
+                <h4>Havblink</h4>
+                <p>Havblink hvidvin</p>
+                <p>Havkystvej 12, 5600 Faaborg</p>
+                <p><a href="mailto:kontakt@havblinkvin.dk" target="_blank">kontakt@havblinkvin.dk</a></p>
+                <p><a href="tel:12345678" target="_blank">+45 12 34 56 78</a></p>
+          </div>
+          <div>
+            <h4>Links</h4>
+            <p><a href="voresvine.html">Vores vine</a></p>
+            <p><a href="omos.html">Om Havblink</a></p>
+            <p><a href="danskhvidvin.html">Dansk hvidvin</a></p>
+            <p><a href="besogos.html">Planlæg dit besøg</a></p>
+          </div>
+          <div>
+            <h4>Åbningstider</h4>
+            <p>Gårdbutik & vinsmagning</p>
+            <p>Tors – Søn: 11.00 – 17.00</p>
+            <p>Besøg efter aftale er muligt</p>
+          </div>
+          <div>
+            <h4>Tilmeld nyhedsbrev</h4>
+            <p>Få de seneste nyheder og tilbud direkte i din indbakke.</p>
+            <input type="email" placeholder="Emailadresse" />
+            <button>Tilmeld</button>
+          </div>
+        </div>
+        <p class="footer-note">© 2025 Havblink Hvidvin – Alle rettigheder forbeholdes<br>Website udviklet som del af eksamensprojekt, Multimediedesigner / EAAA</p>
+      </footer>
+      </body>
+      <script>
+      let currentIndex = 0;
+
+function updateSlider() {
+  const track = document.getElementById("wineSlide");
+  const cards = track.children;
+
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  // Brug hidden-klasse i stedet for display none
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  prevBtn.classList.toggle('hidden', currentIndex === 0);
+  nextBtn.classList.toggle('hidden', currentIndex === cards.length - 1);
+}
+
+function nextWine() {
+  const track = document.getElementById("wineSlide");
+  const cards = track.children;
+  if (currentIndex < cards.length - 1) {
+    currentIndex++;
+    updateSlider();
+  }
+}
+
+function prevWine() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateSlider);
+
+let muscarisIndex = 0;
+
+function updateMuscarisSlider() {
+  const track = document.getElementById("muscarisSlide");
+  const cards = track.children;
+
+  track.style.transform = `translateX(-${muscarisIndex * 100}%)`;
+
+  document.getElementById("muscarisPrevBtn").classList.toggle('hidden', muscarisIndex === 0);
+  document.getElementById("muscarisNextBtn").classList.toggle('hidden', muscarisIndex === cards.length - 1);
+}
+
+function nextMuscaris() {
+  const track = document.getElementById("muscarisSlide");
+  const cards = track.children;
+  if (muscarisIndex < cards.length - 1) {
+    muscarisIndex++;
+    updateMuscarisSlider();
+  }
+}
+
+function prevMuscaris() {
+  if (muscarisIndex > 0) {
+    muscarisIndex--;
+    updateMuscarisSlider();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateMuscarisSlider);
+        </script>
+</html>

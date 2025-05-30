@@ -1,0 +1,149 @@
+/* hero section */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* intro sektion */
+  .intro-section {
+    margin-top: -60px;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .intro-section h2 {
+    font-family: 'playfair-display', serif;
+    font-size: 70px;
+    color: #333333;
+    font-weight: 100;
+  }
+  
+  .intro-section p {
+    font-family: 'open-sans', sans-serif;
+    font-size: 20px;
+    color: #333333;
+  }
+/* === Info-sektion === */
+.visit-info {
+    background-color: #F8F5F0;
+    padding: 80px 40px;
+    font-family: 'open-sans', sans-serif;
+    margin-top: -70px;
+  }
+  
+  .info-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 80px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .text-info {
+    flex: 1;
+    min-width: 480px;
+    font-size: 20px;
+    line-height: 2;
+    color: #333;
+    text-align: center;
+  }
+  
+  .text-info h3 {
+    font-family: 'playfair-display', serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .text-info a {
+    color: #9CBEA1;
+    text-decoration: none;
+  }
+  
+  .text-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .img-box {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* === Guld CTA === */
+  .gold-cta {
+    background-color: #F5E9C8;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0px 4px 4px #333;
+    width: 90%;
+    padding: 80px 20px 100px;
+    font-family: 'open-sans', sans-serif;
+    position: relative;
+  }
+  
+  .gold-cta h3 {
+    font-family: 'playfair-display', serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: -60px;
+  }
+  
+  .gold-cta p {
+    margin-bottom: 40px;
+    margin-top: -10px;
+    font-size: 20px;
+  }
+  
+  .gold-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .wave-img {
+    margin-bottom: -90px;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* === Knap === */
+  .btn-light a{
+    color: #333333;
+  }
+
+  .btn-light {
+    background-color: #F5E9C8;
+    border: 2px solid #333;
+    color: #333;
+    font-family: 'playfair-display', serif;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px #333;
+    margin-top: 80px;
+  }
+  
+  .btn-light:hover {
+    transform: scale(1.03);
+  }

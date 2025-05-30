@@ -1,0 +1,183 @@
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-video {
+    position: absolute;
+    z-index: -10;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    top: 250px;
+    z-index: 1;
+    color: white;
+    max-width: 700px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta {
+    background-color: #F5E9C8;
+    color: #333333;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .arrow {
+    position: relative;
+    display: flex;
+    bottom: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 44px;
+    color: #fff;
+  }
+  
+  /* Intro Section */
+  .intro {
+    margin-top: -80px;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-weight: 100;
+  }
+  
+  .intro p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #333333;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* 3 Columns Section */
+  .teasers {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 200px;
+  }
+  
+  .teaser {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .teaser img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .teaser h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: "playfair-display", serif;
+    font-weight: 100;
+  }
+  
+  .teaser p {
+    font-size: 16px;
+  }
+  
+  .teaser a {
+    display: inline-block;
+    font-family: "playfair-display", serif;
+    margin-top: 10px;
+    background-color: #F5E9C8;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+    font-size: 17px;
+  }
+
+
+  /* ... eksisterende styles ... */
+
+/* RESPONSIVT DESIGN – til mobil og tablets */
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    padding: 0 20px;
+  }
+
+  .hero-overlay {
+    top: 150px;
+    padding: 0 20px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .cta {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .arrow {
+    bottom: 40px;
+    font-size: 32px;
+  }
+
+  .intro h2 {
+    font-size: 36px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .teasers {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .teaser {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .teaser h3 {
+    font-size: 24px;
+  }
+
+  .teaser p {
+    font-size: 15px;
+  }
+
+  .teaser a {
+    font-size: 15px;
+    padding: 8px 18px;
+  }
+
+  .vineyard img {
+    margin-top: 60px;
+  }
+}

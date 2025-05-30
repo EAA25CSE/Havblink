@@ -1,0 +1,263 @@
+  /* hero section */
+  .hero img{
+    padding-top: 0px;
+    width: 100%;
+  }
+  /* intro section */
+  .intro-section {
+    margin-top: -20px;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .intro-section h2 {
+    font-family: 'playfair-display', serif;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-weight: 100;
+  }
+
+  .intro-section h3 {
+    font-family: 'playfair-display', serif;
+    font-size: 20px;
+    margin-top: -30px;
+    color: #333333;
+    font-weight: 100;
+  }
+  
+  .intro-section p {
+    font-family: 'playfair-display', sans-serif;
+    font-size: 25px;
+    color: #333333;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  /* wine feature section */
+  .wine-feature {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wine-card1{
+    background-color: #DDECF1;
+  }
+  .wine-card2{
+    background-color: #F5E9C8;
+  }
+  .wine-card1, .wine-card2 {
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 40px 60px;
+    max-width: 1000px;
+    width: 90%;
+    gap: 60px;
+  }
+
+  
+  
+  /* Vinflaske */
+  .wine-card1 img, .wine-card2 img {
+    height: auto;
+    width: 30%;
+    object-fit: contain;
+  }
+  
+  /* Tekst */
+  .wine-card1 h3, .wine-card2 h3 {
+    font-size: 38px;
+    font-family: "playfair-display", serif;
+    font-weight: 100;
+    color: #333333;
+    margin-bottom: 24px;
+  }
+  
+  .wine-card1 p, .wine-card2 p {
+    font-size: 18px;
+    font-family: 'playfair-display', serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 12px 0;
+  }
+  
+  .wine-card1 strong, .wine-card2 strong {
+    font-weight: bold;
+    font-family: 'playfair-display', serif;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  /* Knapperne */
+  .btn-dark {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    background-color: #333333;
+    border: 2px solid #333;
+    color: #F5E9C8;
+    font-family: 'Georgia', serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px #333;
+  }
+  
+  .btn-dark:hover {
+    background-color: #333333;
+    color: #f2deaa;
+    transform: scale(1.03);
+  }
+
+  /* Slider setup */
+.wine-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: #F8F5F0;
+  }
+  
+  .wine-slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+  
+  /* Arrow buttons */
+  .slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    background-color: #F5E9C8;
+    border: 2px solid #333;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slide-arrow.left {
+    left: 20px;
+  }
+  
+  .slide-arrow.right {
+    right: 20px;
+  }
+  .slide-arrow {
+    transition: opacity 0.3s ease;
+  }
+  
+  .slide-arrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    background-color: #F5E9C8;
+    border: 2px solid #333;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    z-index: 10;
+    box-shadow: 3px 3px 0px #333;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 1;
+    scale: 1;
+  }
+  
+  .slide-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+    background-color: #f2deaa;
+  }
+  
+  /* Pil positioner */
+  .slide-arrow.left {
+    left: 150px;
+  }
+  .slide-arrow.right {
+    right: 150px;
+  }
+  
+  /* Skjul-klasse */
+  .slide-arrow.hidden {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+    pointer-events: none;
+  }
+  
+  /* Muscaris slider */
+  .muscaris-slider {
+    padding-top: 60px;
+  }
+
+  /* cta section */
+/* CTA med delt baggrund */
+.shop-cta-section.split-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    padding: 80px 20px 100px;
+    position: relative;
+    background: linear-gradient(to right, #D8EDF2 50%, #F5E9C8 50%);
+  }
+  
+  /* Overskrift */
+  .shop-cta-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: #333333;
+    margin: 60px 0 20px;
+  }
+  
+  /* Brødtekst */
+  .shop-cta-section p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'open-sans', sans-serif;
+    margin-bottom: 12px;
+  }
+  
+  /* Knap */
+  .shop-cta-section .btn-dark {
+    margin-top: 24px;
+    background-color: #333333;
+    border: 2px solid #333;
+    color: #F5E9C8;
+    font-family: 'playfair-display', serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px #333;
+  }
+  
+  .shop-cta-section .btn-dark:hover {
+    transform: scale(1.05);
+  }
+
+  .wave-image {
+    width: 15%;
+    height: auto;
+    margin-bottom: -10px;
+  }

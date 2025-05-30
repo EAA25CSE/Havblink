@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "playfair-display";
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: "open-sans";
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+  
+  body {
+    background-color: #F8F5F0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+
+  .nav-left,
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    gap: 120px;
+  }
+    .nav-left {
+        left: 0;
+        top: 35px;
+    }
+    .nav-right {
+        right: 30px;
+        top: 35px;
+        gap: 130px;
+    }
+  
+  .nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  /* Logo i midten */
+  #logo {
+    position: absolute;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    align-content: center;
+
+  }
+  
+  /* Shop button */
+  .shop-btn {
+    position: fixed;
+    right: -15px;
+    top: 200px;
+    z-index: 2;
+  }
+  
+  .shop-btn a {
+    font-weight: bold;
+    background-color: #F5E9C8;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: left;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #333333;
+  }
+  .shop-btn :hover {
+    background-color: #f2deaa;
+    color: #333333;
+  }
+  
+  /* Responsiv justering */
+  /* Responsive Header */
+@media (max-width: 900px) {
+  .nav-left,
+  .nav-right {
+  position: static;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 16px;
+  }
+  .nav-left a,
+.nav-right a {
+    font-size: 22px;
+    padding: 8px;
+}
+
+.logo-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+
+#logo {
+    position: static;
+    width: 400%;
+    margin-left: -1170px;
+    margin-top: -180px;
+    display: block;
+    position: static;
+}
+
+.shop-btn {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+}
+}
+  @media (max-width: 768px) {
+    .top-nav {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .nav-left,
+    .nav-right {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo-wrapper {
+      position: static;
+      transform: none;
+      margin: 20px 0;
+    }
+  }
+
+
+  /* Vineyard Image Section */
+  .vineyard img{
+    margin-top: 100px;
+    margin-bottom: -8px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #9CBEA1;
+    color: #333333;
+    padding: 60px 40px 20px;
+    font-family: "open-sans", sans-serif;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-columns div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  footer h4 {
+    font-family: "playfair-display", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F5E9C8; /* cremet hvid skrift */
+    margin-bottom: 15px;
+  }
+  
+  footer p,
+  footer a {
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333333;
+  }
+  footer p,
+  footer a {
+  font-size: 16px;
+  color: #333333;
+  line-height: 2; 
+  margin-bottom: 14px; /* Øget fra 10px */
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Nyhedsbrev */
+  footer input[type="email"] {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #94B799;
+    color: #333333;
+  }
+  footer input::placeholder {
+    color: #333333;
+    opacity: 0.6;
+  }
+  
+  footer button {
+    background-color: #F5E9C8;
+    border: 1px solid #333333;
+    color: #333333;
+    font-weight: bold;
+    padding: 12px 105px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Footer note nederst */
+  .footer-note {
+    font-family: "open-sans", sans-serif;
+    color: #333333;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 95px;
+    font-weight: bold;
+    margin-bottom: -15px;
+    padding-bottom: 10px;
+  }
+  @media (max-width: 768px) {
+
+    footer .footer-columns {
+      flex-direction: column;
+      gap: 30px;
+    }
+    footer input[type="email"] {
+      width: 40%;
+      margin-bottom: 10px;
+    }
+  }
