@@ -11,11 +11,25 @@
     <header>
         <div class="logo-wrapper">
             <img src="images/header/header2.png" alt="Havblink Logo" class="header2" usemap="#logo-ss" id="logo">
+            <img src="images/logo/logo2.png" alt="Havblink Logo" id="logo2">
           </div>
           <map name="logo-ss"> <!--koordinater, der matcher billedets dimensioner (1452x150px)-->
               <!--Herunder har jeg lavet et usynligt felt der gør logoet klikbart selvom det bare er et billede-->
            <area shape="rect" coords="660,199,910,80" alt="hjem" href="index.html">
          </map>
+      <!-- Burger Menu -->
+      <div class="burger-menu">
+        <div class="burger-icon">&#9776;</div>
+      </div>
+
+      <!-- Mobilmenu (hidden by default) -->
+      <nav class="mobile-nav">
+        <a href="index.html">Forside</a>
+        <a href="voresvine.html">Vores vine</a>
+        <a href="danskhvidvin.html">Dansk hvidvin</a>
+        <a href="besogos.html">Besøg os</a>
+        <a href="omos.html" style="color: #728e79;">Om os</a>
+      </nav>
 
         <nav class="nav-left">
             <a href="voresvine.html">Vores vine</a>
@@ -145,4 +159,23 @@
             <p class="footer-note">© 2025 Havblink Hvidvin – Alle rettigheder forbeholdes<br>Website udviklet som del af eksamensprojekt, Multimediedesigner / EAAA</p>
           </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burgerIcon = document.querySelector('.burger-icon');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    // Toggle visning
+    burgerIcon.addEventListener('click', function () {
+      mobileNav.classList.toggle('show');
+    });
+
+    // Luk menu når man klikker på et link
+    const links = mobileNav.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileNav.classList.remove('show');
+      });
+    });
+  });
+</script>
 </html>

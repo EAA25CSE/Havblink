@@ -9,25 +9,24 @@
 </head>
 <body>
     <header>
-       
-      
         <div class="logo-wrapper">
           <img src="images/header/header.png" alt="Havblink Logo" id="logo">
+          <img src="images/logo/logo.png" alt="Havblink Logo" id="logo2">
         </div>
 
         <!-- Burger Menu -->
-          <div class="burger-menu">
-            <div class="burger-icon">&#9776;</div>
-          </div>
+        <div class="burger-menu">
+          <div class="burger-icon">&#9776;</div>
+        </div>
 
         <!-- Mobilmenu (hidden by default) -->
-          <nav class="mobile-nav">
-            <a href="index.html">Forside</a>
-            <a href="voresvine.html">Vores vine</a>
-            <a href="omos.html">Om Havblink</a>
-            <a href="danskhvidvin.html">Dansk hvidvin</a>
-            <a href="besogos.html">Planlæg dit besøg</a>
-          </nav>
+        <nav class="mobile-nav">
+          <a href="index.html" style="color: #728e79;">Forside</a>
+          <a href="voresvine.html">Vores vine</a>
+          <a href="danskhvidvin.html">Dansk hvidvin</a>
+          <a href="besogos.html">Besøg os</a>
+          <a href="omos.html">Om os</a>
+        </nav>
 
         <nav class="nav-left">
             <a href="voresvine.html">Vores vine</a>
@@ -121,5 +120,25 @@
         </div>
         <p class="footer-note">© 2025 Havblink Hvidvin – Alle rettigheder forbeholdes<br>Website udviklet som del af eksamensprojekt, Multimediedesigner / EAAA</p>
       </footer>
+      
   </body>
+  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const burgerIcon = document.querySelector('.burger-icon');
+          const mobileNav = document.querySelector('.mobile-nav');
+      
+          // Toggle visning
+          burgerIcon.addEventListener('click', function () {
+            mobileNav.classList.toggle('show');
+          });
+      
+          // Luk menu når man klikker på et link
+          const links = mobileNav.querySelectorAll('a');
+          links.forEach(link => {
+            link.addEventListener('click', function () {
+              mobileNav.classList.remove('show');
+            });
+          });
+        });
+  </script>
 </html>

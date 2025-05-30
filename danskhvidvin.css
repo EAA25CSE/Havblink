@@ -1,6 +1,7 @@
 /* Hero sektion */
 .hero img{
     width: 100%;
+    margin-top: -450px;
 }
 /* intro sektion */
 .intro-section {
@@ -55,17 +56,10 @@
     background-color: #F8F5F0;
   }
   
-  .text-block {
-    padding: 60px 80px;
-    background-color: #F5E9C8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
   .image-block {
     display: flex;
     align-items: center;
+    padding: 0;
   }
   
   .image-block img {
@@ -75,18 +69,14 @@
     display: block;
   }
   
-  /* Gør billedet helt ud til kanten */
-  .left-img {
-    grid-column: 2 / 3;
-    padding: 0;
+  .text-block {
+    padding: 60px 80px;
+    background-color: #F5E9C8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
-  .right-img {
-    grid-column: 1 / 2;
-    padding: 0;
-  }
-  
-  /* Typografi */
   .text-block h3 {
     font-family: "playfair-display", serif;
     font-size: 30px;
@@ -94,7 +84,7 @@
   }
   
   .text-block p {
-    font-family: "inter", sans-serif;
+    font-family: "open-sans", sans-serif;
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 12px;
@@ -167,3 +157,101 @@
   .btn-light:hover {
     transform: scale(1.05);
   }
+  /* === RESPONSIVE DESIGN TIL danskhvidvin.css === */
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: -328px;
+  }
+
+  .grid-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-block img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .text-block {
+    margin: 20px 60px;
+    padding: 60px 80px;
+    text-align: center;
+  }
+
+
+  .wave,
+  .wave-icon {
+    width: 40%;
+  }
+
+  .intro-section h2 {
+    font-size: 36px;
+  }
+
+  .intro-section2 h2,
+  .text-block h3,
+  .elegance-section h3 {
+    font-size: 22px;
+  }
+
+  .elegance-section {
+    margin-top: -90px;
+  }
+
+  .elegance-section h2 {
+    font-size: 40px;
+  }
+
+  .btn-light {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero img {
+    margin-top: -180px;
+  }
+
+  .intro-section,
+  .intro-section2,
+  .text-block,
+  .elegance-section {
+    padding: 40px 16px;
+  }
+
+  .intro-section h2,
+  .elegance-section h2 {
+    font-size: 32px;
+  }
+
+  .text-block h3,
+  .elegance-section h3 {
+    font-size: 20px;
+  }
+
+  .text-block p,
+  .intro-section p,
+  .intro-section2 p,
+  .elegance-section p {
+    font-size: 16px;
+  }
+
+  .wave,
+  .wave-icon {
+    width: 50%;
+  }
+
+  .btn-light {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+}

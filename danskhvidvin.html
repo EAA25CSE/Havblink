@@ -11,11 +11,25 @@
     <header>
         <div class="logo-wrapper">
             <img src="images/header/header2.png" alt="Havblink Logo" class="header2" usemap="#logo-ss" id="logo">
+            <img src="images/logo/logo2.png" alt="Havblink Logo" id="logo2">
           </div>
           <map name="logo-ss"> <!--koordinater, der matcher billedets dimensioner (1452x150px)-->
               <!--Herunder har jeg lavet et usynligt felt der gør logoet klikbart selvom det bare er et billede-->
            <area shape="rect" coords="660,199,910,80" alt="hjem" href="index.html">
          </map>
+         <!-- Burger Menu -->
+       <div class="burger-menu">
+        <div class="burger-icon">&#9776;</div>
+      </div>
+
+      <!-- Mobilmenu (hidden by default) -->
+      <nav class="mobile-nav">
+        <a href="index.html">Forside</a>
+        <a href="voresvine.html">Vores vine</a>
+        <a href="danskhvidvin.html" style="color: #728e79;">Dansk hvidvin</a>
+        <a href="besogos.html">Besøg os</a>
+        <a href="omos.html">Om os</a>
+      </nav>
 
         <nav class="nav-left">
             <a href="voresvine.html">Vores vine</a>
@@ -52,7 +66,12 @@
             <br><p>Med præmierede vine og øget nysgerrighed er Danmark ved at sætte sig på vinkortet, 
             <br>særligt inden for hvidvin, hvor klimaet og de små vingårde skaber unikke smagsoplevelser.</p>
         </section>
+        
         <section class="grid-section">
+            <div class="image-block left-img">
+              <img src="images/dansk-hvidvin/solaris-druen.png" alt="Solaris druer">
+            </div>
+
             <div class="text-block">
               <h3>Solaris-druen</h3>
               <p>Solaris er en grøn druesort, der trives i det nordiske klima.</p>
@@ -61,19 +80,19 @@
               <p>Dens lette citrusnoter og solmodne karakter passer perfekt til Sydfyns kystnære terroir.</p>
             </div>
           
-            <div class="image-block left-img">
-              <img src="images/dansk-hvidvin/solaris-druen.png" alt="Solaris druer">
-            </div>
-          
             <div class="image-block right-img">
               <img src="images/dansk-hvidvin/natur.png" alt="Vinmark på Sydfyn">
             </div>
-          
+            
             <div class="text-block">
               <h3>Nærhed til naturen</h3>
               <p>Vores vin dyrkes med omtanke.</p>
               <p>Med marker tæt på gården, minimal transport og fokus på bæredygtige løsninger, værner vi om både smag og miljø.</p>
               <p>Det handler ikke bare om god vin – men om at producere med respekt for naturen og det fællesskab, vi er en del af.</p>
+            </div>
+            
+            <div class="image-block left-img">
+              <img src="images/dansk-hvidvin/cork.png" alt="Vinpropper i glas">
             </div>
           
             <div class="text-block">
@@ -82,9 +101,7 @@
               <p>“Solaris-druen fra Sydfyn viser, hvordan terroir og klima kan skabe noget helt særligt.”<br><strong>– Vinavisen</strong></p>
             </div>
           
-            <div class="image-block left-img">
-              <img src="images/dansk-hvidvin/cork.png" alt="Vinpropper i glas">
-            </div>
+            
           </section>
           <section class="elegance-section">
             <img src="images/logo/wave.png" alt="Dekorativ bølge" class="wave-icon">
@@ -133,4 +150,23 @@
         <p class="footer-note">© 2025 Havblink Hvidvin – Alle rettigheder forbeholdes<br>Website udviklet som del af eksamensprojekt, Multimediedesigner / EAAA</p>
       </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burgerIcon = document.querySelector('.burger-icon');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    // Toggle visning
+    burgerIcon.addEventListener('click', function () {
+      mobileNav.classList.toggle('show');
+    });
+
+    // Luk menu når man klikker på et link
+    const links = mobileNav.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileNav.classList.remove('show');
+      });
+    });
+  });
+</script>
 </html>

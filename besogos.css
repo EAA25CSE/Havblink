@@ -2,6 +2,7 @@
 .hero img {
     width: 100%;
     height: auto;
+    margin-top: -460px;
 }
 
 /* intro sektion */
@@ -147,3 +148,78 @@
   .btn-light:hover {
     transform: scale(1.03);
   }
+  /* === RESPONSIV BESOGOS === */
+/* === RESPONSIV BESOGOS === */
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: -350px;
+  }
+
+  .intro-section {
+    padding: 40px 20px;
+    margin-top: -40px;
+    margin-bottom: 45px;
+  }
+
+  .intro-section h2 {
+    font-size: 40px;
+  }
+
+  .visit-info {
+    padding: 40px 20px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .info-row:nth-child(1) {
+    flex-direction: column-reverse;
+  }
+
+  .info-row:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .text-info {
+    min-width: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+
+  .text-info h3 {
+    font-size: 30px;
+  }
+
+  .img-box {
+    min-width: 100%;
+  }
+
+  .gold-cta {
+    padding: 60px 20px 80px;
+    margin-top: -20px;
+    margin-bottom: -40px;
+  }
+
+  .gold-cta h3 {
+    font-size: 30px;
+  }
+
+  .gold-cta p {
+    font-size: 18px;
+  }
+
+  .btn-light {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 40px;
+  }
+
+  .wave-img {
+    width: 50%;
+    margin-bottom: -60px;
+  }
+}

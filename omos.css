@@ -2,6 +2,7 @@
 .hero img {
     width: 100%;
     height: auto;
+    margin-top: -300px;
 }
 /* Intro sektion */
 .intro-section {
@@ -149,4 +150,80 @@
   .wave-icon.center {
     margin-top: 40px;
     margin-bottom: 60px;
+  }
+  @media (max-width: 768px) {
+    .hero img {
+      margin-top: -328px;
+    }
+    
+    .intro-section h2 {
+      font-size: 40px;
+    }
+  
+    .intro-section p {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+  
+    .intro-text h4 {
+      font-size: 30px;
+    }
+  
+    .intro-text p {
+      font-size: 18px;
+    }
+  
+    .section-title {
+      font-size: 38px;
+    }
+  
+    .value-box {
+      max-width: 90%;
+    }
+  
+    .value-box h3 {
+      font-size: 30px;
+    }
+  
+    .value-box p,
+    .value-box ul {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .wave-icon {
+      width: 50%;
+    }
+
+    .team-section img {
+      width: 50%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+
+    }
+  
+    .team-section h2 {
+      font-size: 38px;
+    }
+  
+    .team-grid {
+      flex-direction: row;
+      align-items: center;
+      gap: 0px;
+    }
+  
+    .team-member h4 {
+      font-size: 24px;
+    }
+  
+    .team-member p {
+      font-size: 18px;
+    }
+
+    .team-section .wave-icon {
+      width: 60%;
+      margin-top: 50px;
+      margin-bottom: -60px;
+    }
   }

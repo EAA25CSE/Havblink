@@ -50,7 +50,7 @@
   
   /* Intro Section */
   .intro {
-    margin-top: -80px;
+    margin-top: -100px;
     text-align: center;
     padding: 60px 20px;
   }
@@ -120,32 +120,41 @@
 /* RESPONSIVT DESIGN – til mobil og tablets */
 @media (max-width: 768px) {
   .hero {
-    height: 100vh;
+    position: relative;
+    top: -328px;
+    height: 87.5vh;
     padding: 0 20px;
   }
 
+  .hero-video {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+  }
+
   .hero-overlay {
-    top: 150px;
+    top: 225px;
     padding: 0 20px;
   }
 
   .hero-overlay h1 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-bottom: 16px;
   }
 
   .cta {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 20px;
   }
 
   .arrow {
-    bottom: 40px;
+    bottom: 380px;
     font-size: 32px;
   }
 
   .intro h2 {
     font-size: 36px;
+    margin-top: -270px;
   }
 
   .intro p {
@@ -157,6 +166,7 @@
     flex-direction: column;
     padding: 40px 20px;
     align-items: center;
+    margin-top: -170px;
   }
 
   .teaser {
@@ -178,6 +188,6 @@
   }
 
   .vineyard img {
-    margin-top: 60px;
+    margin-top: 0;
   }
 }

@@ -1,6 +1,6 @@
   /* hero section */
   .hero img{
-    padding-top: 0px;
+    margin-top: -340px;
     width: 100%;
   }
   /* intro section */
@@ -260,4 +260,64 @@
     width: 15%;
     height: auto;
     margin-bottom: -10px;
+  }
+  @media (max-width: 768px) {
+    .hero {
+      position: relative;
+      top: 10px;
+      z-index: -10;
+      width: 100%;
+
+    }
+    .intro-section {
+      padding: 40px 20px;
+    }
+    .intro-section h2 {
+      font-size: 40px;
+    }
+    .intro-section h3 {
+      font-size: 16px;
+    }
+    .intro-section p {
+      font-size: 18px;
+    }
+    .wine-card1,
+    .wine-card2 {
+      flex-direction: column;
+    }
+    .wine-card1 img,
+    .wine-card2 img {
+      width: 30%;
+      margin-top: -30px;
+      margin-bottom: -60px;
+    }
+    .wine-card1 h3,
+    .wine-card2 h3 {
+      font-size: 26px;
+    }
+    .wine-card1 p,
+    .wine-card2 p {
+      font-size: 16px;
+    }
+    .slide-arrow.left {
+      left: 20px;
+    }
+    .slide-arrow.right {
+      right: 20px;
+    }
+    .shop-cta-section.split-bg {
+      margin-top: 50px;
+    }
+    .shop-cta-section h2 {
+      font-size: 32px;
+    }
+    .shop-cta-section p {
+      font-size: 16px;
+    }
+    .shop-cta-section .btn-dark {
+      font-size: 16px;
+    }
+    .wave-image {
+      width: 25%;
+    }
   }
