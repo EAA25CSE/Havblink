@@ -50,16 +50,43 @@
   }
   /* grid section */
   .grid-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
     background-color: #F8F5F0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-block, .image-block {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-block {
+    background-color: #F5E9C8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    box-sizing: border-box;
   }
   
   .image-block {
     display: flex;
     align-items: center;
-    padding: 0;
+    justify-content: center;
   }
   
   .image-block img {
@@ -69,14 +96,7 @@
     display: block;
   }
   
-  .text-block {
-    padding: 60px 80px;
-    background-color: #F5E9C8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+  /* Typografi */
   .text-block h3 {
     font-family: "playfair-display", serif;
     font-size: 30px;
@@ -84,7 +104,7 @@
   }
   
   .text-block p {
-    font-family: "open-sans", sans-serif;
+    font-family: "inter", sans-serif;
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 12px;
@@ -163,23 +183,40 @@
     margin-top: -328px;
   }
 
-  .grid-section {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .image-block img {
-    width: 70%;
-    height: auto;
-    margin: auto;
-    border-radius: 20px;
-  }
+    .grid-row {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+    }
 
-  .text-block {
-    margin: 20px 60px;
-    padding: 60px 80px;
-    text-align: center;
-  }
+    .grid-row:nth-of-type(2) {
+      flex-direction: column-reverse;
+    }
+  
+    .image-block, .text-block {
+      width: 100%;
+      height: auto;
+    }
+  
+    .image-block img {
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+    }
+  
+    .text-block {
+      padding: 40px 20px;
+    }
+  
+    .text-block h3 {
+      font-size: 24px;
+    }
+  
+    .text-block p {
+      font-size: 18px;
+    }
+  
 
 
   .wave,
